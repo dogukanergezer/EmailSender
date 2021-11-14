@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\doguk\\OneDrive\\Desktop\\EmailSender\\consumer\\consumer.csproj": {}
+    "c:\\Users\\doguk\\OneDrive\\Desktop\\EmailSender\\consumer\\consumer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\doguk\\OneDrive\\Desktop\\EmailSender\\consumer\\consumer.csproj": {
+    "c:\\Users\\doguk\\OneDrive\\Desktop\\EmailSender\\consumer\\consumer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\doguk\\OneDrive\\Desktop\\EmailSender\\consumer\\consumer.csproj",
+        "projectUniqueName": "c:\\Users\\doguk\\OneDrive\\Desktop\\EmailSender\\consumer\\consumer.csproj",
         "projectName": "consumer",
-        "projectPath": "C:\\Users\\doguk\\OneDrive\\Desktop\\EmailSender\\consumer\\consumer.csproj",
+        "projectPath": "c:\\Users\\doguk\\OneDrive\\Desktop\\EmailSender\\consumer\\consumer.csproj",
         "packagesPath": "C:\\Users\\doguk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\doguk\\OneDrive\\Desktop\\EmailSender\\consumer\\obj\\",
+        "outputPath": "c:\\Users\\doguk\\OneDrive\\Desktop\\EmailSender\\consumer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -46,7 +46,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.SignalR.Client.Core": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[5.0.2, )"
             },
             "RabbitMQ.Client": {
               "target": "Package",

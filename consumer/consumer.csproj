@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client.Core" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client.Core" Version="5.0.2" />
     <PackageReference Include="RabbitMQ.Client" Version="6.2.2" />
   </ItemGroup>
 

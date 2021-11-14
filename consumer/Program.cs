@@ -12,10 +12,9 @@ namespace consumer
     {
         static void Main(string[] args)
         {
-             HubConnection  connSignalR = new HubConnectionBuilder().Build();
-
+            HubConnection connSignalR = new HubConnectionBuilder().Build();
             ConnectionFactory factory = new ConnectionFactory();
-            factory.Uri = new System.Uri("lcoalhost");
+            factory.Uri = new System.Uri("localhost");
             using IConnection connection = factory.CreateConnection();
             using IModel channel = connection.CreateModel();
 
@@ -34,7 +33,7 @@ namespace consumer
                  EmailSender.Send(user.Email, user.Message);
                  Console.WriteLine($"{user.Email} mail has been sended");
 
-              await connSignalR.InvokeAsync("SendMessageAsync",$"{user.Email} mail has been sended");
+                 await connSignalR.InvokeAsync("SendMessageAsync", $"{user.Email} mail has been sended");
              };
             Console.Read();
 
