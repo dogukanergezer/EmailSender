@@ -14,7 +14,7 @@ namespace publisher.Controllers
     {
 
         [HttpPost()]
-        public IActionResult Post(User model)
+        public IActionResult Post([FromForm]User model)
         {
             ConnectionFactory factory = new ConnectionFactory();
             factory.Uri = new System.Uri("lcoalhost");
