@@ -12,7 +12,7 @@ namespace consumer
     {
         static void Main(string[] args)
         {
-            HubConnection connSignalR = new HubConnectionBuilder().Build();
+            HubConnection connSignalR = new HubConnectionBuilder().WithUrl("https://localhost:5001/messageHub").Build();
             ConnectionFactory factory = new ConnectionFactory();
             factory.Uri = new System.Uri("localhost");
             using IConnection connection = factory.CreateConnection();
