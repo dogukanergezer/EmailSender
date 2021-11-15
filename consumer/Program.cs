@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using System.Text.Json;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR.Client;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
@@ -10,9 +11,11 @@ namespace consumer
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             HubConnection connSignalR = new HubConnectionBuilder().WithUrl("https://localhost:5001/messageHub").Build();
+            await connSignalR.StartAsync();
+
             ConnectionFactory factory = new ConnectionFactory();
             factory.Uri = new System.Uri("localhost");
             using IConnection connection = factory.CreateConnection();
