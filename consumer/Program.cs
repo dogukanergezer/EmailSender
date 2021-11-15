@@ -15,7 +15,7 @@ namespace consumer
         {
             HubConnection connSignalR = new HubConnectionBuilder().WithUrl("https://localhost:5001/messageHub").Build();
             await connSignalR.StartAsync();
-
+            
             ConnectionFactory factory = new ConnectionFactory();
             factory.Uri = new System.Uri("localhost");
             using IConnection connection = factory.CreateConnection();
