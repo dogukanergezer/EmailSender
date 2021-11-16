@@ -17,7 +17,7 @@ namespace publisher.Controllers
         public IActionResult Post([FromForm]User model)
         {
             ConnectionFactory factory = new ConnectionFactory();
-            factory.Uri = new System.Uri("localhost");
+            factory.Uri = new System.Uri("http://localhost:15672");
             using IConnection connection = factory.CreateConnection();
             using IModel channel = connection.CreateModel();
 
